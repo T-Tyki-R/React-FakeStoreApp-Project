@@ -85,7 +85,7 @@ const AddProduct = () => {
             required
           />
         </Form.Group>
-        <Button variant="info" type="submit" disabled={loading}>
+        <Button className="bg-secondary border-0" type="submit" disabled={loading}>
           {loading ? "Submitting..." : "Add Product"}
         </Button>
       </Form>

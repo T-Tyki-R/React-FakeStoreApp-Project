@@ -108,7 +108,7 @@ const EditProduct = () => {
             required
           />
         </Form.Group>
-        <Button variant="info" type="submit" disabled={updating}>
+        <Button className ="bg-secondary border-0" type="submit" disabled={updating}>
           {updating ? "Updating..." : "Update Product"}
         </Button>
       </Form>

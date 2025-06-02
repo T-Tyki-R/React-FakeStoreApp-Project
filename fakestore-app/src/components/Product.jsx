@@ -50,7 +50,7 @@ const Products = () => {
       <Row>
         {products.map(product => (
           <Col key={product.id} xs={12} sm={6} md={4} lg={3} className="mb-4">
-            <Card style={{ width: '18rem', height: '100%' }}>
+            <Card style={{ width: '18rem', height: '100%', gap: '1rem', padding: '1rem' }}>
               <Card.Img
                 variant="top"
                 src={product.image}
@@ -60,15 +60,10 @@ const Products = () => {
               <Card.Body className="d-flex flex-column">
                 <Card.Title>{product.title}</Card.Title>
                 <Card.Text className="mb-2">
-                  <strong>Price:</strong> ${product.price}
+                  <strong>Price:</strong> ${product.price.toFixed(2)}
                 </Card.Text>
-                <Button
-                  as={Link}
-                  to={`/product/${product.id}`}
-                  variant="info"
-                  className="mt-auto"
-                >
-                  View Details
+                <Button as= {Link} to={`/product/${product.id}`} className="mt-auto mb-6 bg-secondary text-light border-0">   
+                  <strong>View Details</strong>
                 </Button>
               </Card.Body>
             </Card>
