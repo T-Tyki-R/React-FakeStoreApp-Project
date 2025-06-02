@@ -13,6 +13,12 @@ const NavBar = () => {
                     <Nav.Link as={NavLink} to="/" activeclassname="active">
                         Home
                     </Nav.Link>
+                    <Nav.Link as={NavLink} to="/product" activeclassname="active">
+                        Products
+                    </Nav.Link>
+                    <Nav.Link as={NavLink} to="/add-product" activeclassname="active">
+                        Add Products
+                    </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

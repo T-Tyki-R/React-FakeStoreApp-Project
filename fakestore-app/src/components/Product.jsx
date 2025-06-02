@@ -64,7 +64,7 @@ const Products = () => {
                 </Card.Text>
                 <Button
                   as={Link}
-                  to={`/products/${product.id}`}
+                  to={`/product/${product.id}`}
                   variant="info"
                   className="mt-auto"
                 >
